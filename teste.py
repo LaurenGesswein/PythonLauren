@@ -1,30 +1,20 @@
-# Atualizar elemento com uma operação
 
-# Tarefa: Crie uma lista com três inteiros.
-# Atualize o último elemento para a soma dos dois primeiros.
-# Exiba a lista.
-# Use: int(), input(), indexação lista[i], print()
-# Tipos: int, list.
-# Conceitos: operadores aritméticos (+), acesso/atribuição por índice.
 
-print("Vamos criar uma lista de números.")
+# Acessar elementos da tupla
+# Tarefa: Leia três frutas e coloque em uma tupla.
+# Depois leia uma fruta e diga se ela está ou não na tupla.
+# Orientações: 
+# usar in
+# usar input()
+# tipo: str, tuple
+# conceito: operador de pertinência
+
+print("\n")
+aluno = input("Digite o nome do(a) aluno(a): ")
+idade = int(input("Digite a idade do(a) aluno(a):"))
 print("\n")
 
-num1 = int(input("Digite um número inteiro: "))
-num2 = int(input("Digite outro número inteiro: "))
-num3 = int(input("Digite um último número inteiro: "))
+dicio = {f'Aluno(a)': aluno, 'Idade': idade}
+print(dicio)
 print("\n")
 
-lista = [num1, num2, num3]
-print(lista)
-print("\n")
-
-print("Lista atualizada com o último elemento alterado para a soma dos dois primeiros:")
-print("\n")
-
-soma = num1 + num2
-lista.remove(num3)
-lista.append(soma)
-
-print(lista)
-print("\n")
