@@ -1,20 +1,27 @@
 
 
-# Acessar elementos da tupla
-# Tarefa: Leia três frutas e coloque em uma tupla.
-# Depois leia uma fruta e diga se ela está ou não na tupla.
-# Orientações: 
-# usar in
-# usar input()
-# tipo: str, tuple
-# conceito: operador de pertinência
+# [DICT  - desafio] Agenda (CRUD simples) com ordenação de nomes
+# Tarefa: Comece com agenda = {"Ana": "1111-1111", "Bruno": "2222-2222"}. 
+# Adicionar um novo contato (nome→telefone)
+# Atualizar o telefone de um contato informado (se existir)
+# Remover um contato pelo nome (se existir)
+# Exibir a lista ordenada de nomes de contatos
+# Tipos: str, dict, list (para a lista ordenada, se desejar armazenar).
+# Conceitos: CRUD em dicionários, teste de existência, ordenação de chaves.
+# Use: input(), acesso/atribuição agenda[nome] = tel, in, pop(), sorted(agenda.keys()), print()
+
 
 print("\n")
-aluno = input("Digite o nome do(a) aluno(a): ")
-idade = int(input("Digite a idade do(a) aluno(a):"))
+agenda = {"Anna": 1111-1111, "Bruno": 2222-2222}
+nome = input("Digite o nome do seu novo contato: ")
+num = input("Agora digite o número do seu novo contato: ")
 print("\n")
 
-dicio = {f'Aluno(a)': aluno, 'Idade': idade}
-print(dicio)
+print(agenda)
 print("\n")
+
+agenda[nome] = num
+print(agenda)
+print("\n")
+
 
